@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cheese Cake</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        color: #142d4c;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      h2 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        border: 2px solid;
+        border-radius: 5px;
+        padding: 15px;
+        font-size: 15px;
+        color: #2a2438;
+      }
+      img {
+        display: block;
+        margin: auto;
+        max-width: 120%;
+      }
+      p {
+        line-height: 20px;
+        margin: 15px 0 15px;
+        color: #2a2438;
+      }
+      .learn-more {
+        margin: auto;
+        display: block;
+        text-decoration: none;
+        font-size: 16px;
+      }
+      .learn-more:hover {
+        text-decoration: none;
+        text-decoration: underline;
+        color: black;
+      }
+      .know-button {
+        margin: auto;
+        color: #2a2438;
+        background: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+        border-radius: 10px;
+        font-size: 16px;
+        padding: 25 px;
+        transition: all ease-in-out;
+        box-sizing: 10px;
+        box-shadow: black;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      .know-button:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 500px;
+      }
+      body {
+        background: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My favarite Cheese Cake</h1>
+      <h2>The No bake cheese cake</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/105/606/original/plated-blueberry-cheesecake-720x1080.jpg?1701521515"
+        width="200px"
+        alt="cheesecake🍰"
+      />
+
+      <p>
+        Cheesecake is a dessert made with a soft fresh cheese (typically cottage
+        cheese, cream cheese, quark or ricotta), eggs, and sugar. It may have a
+        crust or base made from crushed cookies (or digestive biscuits), graham
+        crackers, pastry, or sometimes sponge cake. Cheesecake may be baked or
+        unbaked, and is usually refrigerated.
+        <br />
+        <br />
+        Vanilla, spices, lemon, chocolate, pumpkin, or other flavors may be
+        added to the main cheese layer. Additional flavors and visual appeal may
+        be added by topping the finished dessert with fruit, whipped cream,
+        nuts, cookies, fruit sauce, chocolate syrup, or other ingredients.
+        <br />
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Cheesecake"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more on Wikipedia
+      </a>
+      <br />
+      <button class="know-button">🍮 know more</button>
+      <p class="footer">
+        This page was built by
+        <a href="https://www.zamac.io/" target="_blank"> Zamandlovu Ndlovu </a>
+        <br />
+        cheesecake🍰
+      </p>
+    </div>
+    <script>
+      function know() {
+        let name = prompt("what is your name");
+        let flavour = prompt("what is your favarite cheese cake?");
+        let email = prompt("what is yor email address?");
+        alert("Thank you" + " " + name + " " + flavour + " " + "is the best😉");
+      }
+      let knowButton = document.querySelector(".know-button");
+      knowButton.addEventListener("click", know);
+    </script>
+  </body>
+</html>
